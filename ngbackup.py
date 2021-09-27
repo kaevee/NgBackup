@@ -63,9 +63,11 @@ class NgBackup:
                 interval = self.config.intervals.get(interval_name)
                 last_run = task.get_last_run(interval)
                 current_time = int(time.time())
-                self.logger.log(logging.INFO, "Task: %s, Last Run: %d", task.name, last_run)
+                self.logger.log(logging.INFO, "Task: %s, Duration: %d, Last Run: %d Diff: %d", task.name, interval.duration, last_run, current_time - last_run)
                 if (current_time - last_run) > interval.duration:
                     task.synchronize(interval)
+                else:
+                    self.logger.log(logging.INFO, "Skipping %s backup", interval.name)
             if task.src_remote or task.dest_remote:
                 task.close_remote()
 
