@@ -27,7 +27,8 @@
 * For Windows, you need to install Cygwin https://www.cygwin.com/
     * Additional packages required
         * rsync
-        * openssh        
+        * openssh
+    * Cygwin OpenSSH server has to be setup if pushing/pulling from a remote Windows system
 * Checkout the repository
 * Setup configuration file as required
 * Execute NgMain.py script
