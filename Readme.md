@@ -45,6 +45,7 @@
     * Windows -> Windows (Different drive. For example, an external drive)
     * Windows -> Remote *NIX
     * Windows -> Remote Windows
+    * *NIX -> *NIX (Local path)
     * *NIx -> Remote *NIX
     * *NIX -> Windows
 
