@@ -12,7 +12,7 @@
     * File Name, whichever is found first in the following order
         * hostname-devel.ini
         * hostname.ini
-        * ngbackup.in
+        * ngbackup.ini
     * "hostname.ini" convention allows administrators to run the script on multiple systems and maintain configurations in one single repository
     * Unique SSH key per host
     * Custom backup folder name
