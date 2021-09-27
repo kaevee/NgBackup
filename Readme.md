@@ -31,7 +31,7 @@
     * Cygwin OpenSSH server has to be setup if pushing/pulling from a remote Windows system
 * Checkout the repository
 * Setup configuration file as required
-* Execute NgMain.py script
+* Execute NgMain.py script or NgMain.bat in case of windows system
 
 ### Work in Progress
 * Notifications by email
