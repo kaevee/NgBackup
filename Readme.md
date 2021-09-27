@@ -40,6 +40,7 @@
     * Configurable maximum threads
     * Configurable threads per host
 * Maximum disk utilization limit per source/target
+* Restore from backup
 
 ### Notes
 * Code has been tested on Windows/linux with multiple targets
