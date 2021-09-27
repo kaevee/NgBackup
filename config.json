@@ -1,0 +1,57 @@
+{
+    "intervals": {
+        "hourly": 3600,
+        "daily": 0,
+        "weekly": 0,
+        "monthly": 0,
+        "yearly": 0
+    },
+    "tasks": [
+        {
+            "name": "data",
+            "source": "C:\\Users\\Venkatesh\\Documents\\SharedDevel",
+            "destination": "venkatesh@192.168.2.157:/home/venkatesh/data",
+            "rsync_options": "--verbose",
+            "intervals": [
+                "hourly",
+                "daily",
+                "weekly"
+            ],
+            "notifications": [
+                {
+                    "email": "venkatesh@kaevee.com",
+                    "intervals": [
+                        "hourly",
+                        "daily",
+                        "weekly",
+                        "monthly",
+                        "yearly"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Documents",
+            "source": "C:\\Users\\Venkatesh\\Documents\\SharedDevel\\NgBackup",
+            "destination": "E:\ngbackup\\Documents",
+            "rsync_options": "--verbose",
+            "intervals": [
+                "hourly",
+                "daily",
+                "weekly",
+                "monthly",
+                "yearly"
+            ],
+            "notifications": [
+                {
+                    "email": "venkatesh@kaevee.com",
+                    "intervals": [
+                        "hourly",
+                        "daily",
+                        "weekly"
+                    ]
+                }
+            ]
+        }
+    ]
+}

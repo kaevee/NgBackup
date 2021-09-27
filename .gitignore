@@ -1,0 +1,10 @@
+/build
+/dist
+/__pycache__
+/logs
+/control
+/logs
+/venv
+/*.devel.ini
+/.vscode
+/ngbackup.pid
