@@ -9,7 +9,7 @@
     * Source: "C:\Users\UserName\Documents\SharedDevel"
     * Destination: "user@host:C:\Users\UserName\Documents"
 * Easy and flexible configuration
-    * File Name, whichiver is found first in the following order
+    * File Name, whichever is found first in the following order
         * hostname-devel.ini
         * hostname.ini
         * ngbackup.in
