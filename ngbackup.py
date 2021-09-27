@@ -1,3 +1,4 @@
+import time
 from ngconfig import NgConfig
 from pathlib import Path
 import logging
@@ -61,8 +62,10 @@ class NgBackup:
             for interval_name in self.config.intervals.keys():
                 interval = self.config.intervals.get(interval_name)
                 last_run = task.get_last_run(interval)
+                current_time = int(time.time())
                 self.logger.log(logging.INFO, "Task: %s, Last Run: %d", task.name, last_run)
-                task.synchronize(interval)
+                if (current_time - last_run) > interval.duration:
+                    task.synchronize(interval)
             if task.src_remote or task.dest_remote:
                 task.close_remote()
 
