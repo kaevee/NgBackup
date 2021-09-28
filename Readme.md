@@ -1,6 +1,5 @@
 ## Rsync Incremental Backup Script 
 ### Features
-* Quasi time machine 
 * User defined backup intervals
 * User defined backup rotations per interval.
    * Example, one can keep 24 hourly backups and 30 daily backups
